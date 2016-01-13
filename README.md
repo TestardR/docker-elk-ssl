@@ -1,5 +1,5 @@
 
-# SSL-ifyed Docker ELK stack
+# Docker ELK stack (the SSL remix)
 
 This branch contains my attempt at hardening this setup with self-signed certificates. 
 
