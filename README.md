@@ -1,13 +1,17 @@
 
 # SSL-ifyed Docker ELK stack
 
+This branch contains my attempt at hardening this setup with self-signed certificates. 
+
 - Added `certs/` folder with helper scripts for creating self-signed certs.
 - Configured docker-compose, logstash and kibana to use SSL.
 - No longer exposing Elasticsearch ports on localhost.
 
-Things to think about
+Things to think about / resources
 
 - [Logstash is finicky about IP SAN](https://github.com/elastic/logstash-forwarder#important-tlsssl-certificate-notes).
+- [Openssl guide](https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs).
+- [Yet another Openssl guide](http://stackoverflow.com/a/27931596/5453696) which shows how to setup a .conf file for more streamlined key generation. 
 
 ## Docker ELK stack
 
