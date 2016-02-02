@@ -4,6 +4,7 @@
 This branch contains my attempt at hardening this setup with self-signed certificates. 
 
 - Added `certs/` folder with helper scripts for creating self-signed certs.
+- Added `storage/` folder and configured docker-compose.yml to mount it as storage for elastic search data so that it can be persisted even if docker containers were to be deleted and recreated. 
 - Configured docker-compose, logstash and kibana to use SSL.
 - No longer exposing Elasticsearch ports on localhost.
 
@@ -14,8 +15,6 @@ Things to think about / resources
 - [Yet another Openssl guide](http://stackoverflow.com/a/27931596/5453696) which shows how to setup a .conf file for more streamlined key generation. 
 
 ## Docker ELK stack
-
-[![Join the chat at https://gitter.im/deviantony/fig-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/fig-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Run the latest version of the ELK (Elasticseach, Logstash, Kibana) stack with Docker and Docker-compose.
 

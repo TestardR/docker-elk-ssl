@@ -1,3 +1,4 @@
 domain.crt
 domain.key
 *.jks
+storage/elasticsearch
