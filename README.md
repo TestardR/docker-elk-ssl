@@ -5,10 +5,10 @@ This branch contains my attempt at hardening this setup with self-signed certifi
 
 - Added `certs/` folder with helper scripts for creating self-signed certs.
 - Added `storage/` folder and configured docker-compose.yml to mount it as storage for elastic search data so that it can be persisted even if docker containers were to be deleted and recreated. 
-- Configured docker-compose, logstash and kibana to use SSL.
+- Configured logstash and kibana to use SSL.
 - No longer exposing Elasticsearch ports on localhost.
 
-Things to think about / resources
+Things to think about (resources)
 
 - [Logstash is finicky about IP SAN](https://github.com/elastic/logstash-forwarder#important-tlsssl-certificate-notes).
 - [Openssl guide](https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs).
